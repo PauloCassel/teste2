@@ -1,0 +1,185 @@
+
+aluno tds@SLE204870 MINGW64 ~
+$ cd Desktop/
+432087.txt              exer. 2 - Copia.por     exer.4.por
+Git Bash.lnk            exer. 2.por             exer.5.por
+GitHub Desktop.lnk      exer. 3 - Copia.por     paulo/
+Visual Studio Code.lnk  exer. 3.por             teste/
+desktop.ini             exer.1.por
+
+aluno tds@SLE204870 MINGW64 ~
+$ cd Desktop/
+432087.txt              exer. 2 - Copia.por     exer.4.por
+Git Bash.lnk            exer. 2.por             exer.5.por
+GitHub Desktop.lnk      exer. 3 - Copia.por     paulo/
+Visual Studio Code.lnk  exer. 3.por             teste/
+desktop.ini             exer.1.por
+
+aluno tds@SLE204870 MINGW64 ~
+$ cd Desktop/
+432087.txt              exer. 2 - Copia.por     exer.4.por
+Git Bash.lnk            exer. 2.por             exer.5.por
+GitHub Desktop.lnk      exer. 3 - Copia.por     paulo/
+Visual Studio Code.lnk  exer. 3.por             teste/
+desktop.ini             exer.1.por
+
+aluno tds@SLE204870 MINGW64 ~
+$ cd Desktop/teste/
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste
+$ git init
+Initialized empty Git repository in C:/Users/aluno tds.SLE204870/Desktop/teste/.git/
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ ^C
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ touch .gitignore
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git add .gitignore
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git add XPTO.txt
+fatal: pathspec 'XPTO.txt' did not match any files
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git add ppp.txt
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git commit -m testando
+[master (root-commit) 963a8ca] testando
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 ppp.txt
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git remote add origin https://github.com/PauloCassel/teste.git
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 232 bytes | 116.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PauloCassel/teste.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (dev)
+$ git add ppp.txt
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (dev)
+$ git push -u origin dev
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/PauloCassel/teste/pull/new/dev
+remote:
+To https://github.com/PauloCassel/teste.git
+ * [new branch]      dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git add ppp.txt
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git add -i
+           staged     unstaged path
+  1:        +1/-0      nothing ppp.txt
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 7
+Bye.
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git commit -m teste2
+[master 8592f9f] teste2
+ 1 file changed, 1 insertion(+)
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git push -u origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 142.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PauloCassel/teste.git
+   963a8ca..8592f9f  master -> master
+branch 'master' set up to track 'origin/master'.
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git merge
+Already up to date.
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git log
+commit 8592f9fa44a3a888ad5c0de1df9e130b289d058c (HEAD -> master, origin/master)
+Author: Paulo Cassel <paulowilliancassel@gmail.com>
+Date:   Wed Mar 22 20:15:18 2023 -0300
+
+    teste2
+
+commit 963a8ca8c44ed778a7bbd200a13eebbbc85db982 (origin/dev, dev)
+Author: Paulo Cassel <paulowilliancassel@gmail.com>
+Date:   Wed Mar 22 19:54:02 2023 -0300
+
+    testando
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git add senha.txt
+fatal: pathspec 'senha.txt' did not match any files
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git senhas.txt
+git: 'senhas.txt' is not a git command. See 'git --help'.
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git add senhas.txt
+The following paths are ignored by one of your .gitignore files:
+senhas.txt
+hint: Use -f if you really want to add them.
+hint: Turn this message off by running
+hint: "git config advice.addIgnoredFile false"
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git commit senhas.txt
+error: pathspec 'senhas.txt' did not match any file(s) known to git
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git commit -m senhas.txt
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$ git clone https://github.com/PauloCassel/teste
+Cloning into 'teste'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+aluno tds@SLE204870 MINGW64 ~/Desktop/teste (master)
+$
